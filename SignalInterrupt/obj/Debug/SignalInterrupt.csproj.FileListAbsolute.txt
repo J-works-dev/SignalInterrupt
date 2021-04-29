@@ -1,0 +1,10 @@
+C:\Users\Jeremy\source\repos\SignalInterrupt\SignalInterrupt\bin\Debug\SignalInterrupt.exe.config
+C:\Users\Jeremy\source\repos\SignalInterrupt\SignalInterrupt\bin\Debug\SignalInterrupt.exe
+C:\Users\Jeremy\source\repos\SignalInterrupt\SignalInterrupt\bin\Debug\SignalInterrupt.pdb
+C:\Users\Jeremy\source\repos\SignalInterrupt\SignalInterrupt\obj\Debug\SignalInterrupt.csprojAssemblyReference.cache
+C:\Users\Jeremy\source\repos\SignalInterrupt\SignalInterrupt\obj\Debug\SignalInterrupt.Form1.resources
+C:\Users\Jeremy\source\repos\SignalInterrupt\SignalInterrupt\obj\Debug\SignalInterrupt.Properties.Resources.resources
+C:\Users\Jeremy\source\repos\SignalInterrupt\SignalInterrupt\obj\Debug\SignalInterrupt.csproj.GenerateResource.cache
+C:\Users\Jeremy\source\repos\SignalInterrupt\SignalInterrupt\obj\Debug\SignalInterrupt.csproj.CoreCompileInputs.cache
+C:\Users\Jeremy\source\repos\SignalInterrupt\SignalInterrupt\obj\Debug\SignalInterrupt.exe
+C:\Users\Jeremy\source\repos\SignalInterrupt\SignalInterrupt\obj\Debug\SignalInterrupt.pdb
