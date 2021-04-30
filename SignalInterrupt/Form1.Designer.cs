@@ -36,16 +36,15 @@ namespace SignalInterrupt
             this.buttonTask1Start = new System.Windows.Forms.Button();
             this.progressBarTask1 = new System.Windows.Forms.ProgressBar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.task2Progress = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonTask2Stop = new System.Windows.Forms.Button();
             this.buttonTask2Start = new System.Windows.Forms.Button();
-            this.trackBarTask2 = new System.Windows.Forms.TrackBar();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarTask2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -57,14 +56,14 @@ namespace SignalInterrupt
             this.groupBox1.Controls.Add(this.progressBarTask1);
             this.groupBox1.Location = new System.Drawing.Point(32, 29);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(289, 329);
+            this.groupBox1.Size = new System.Drawing.Size(279, 329);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Task 1";
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(163, 103);
+            this.label2.Location = new System.Drawing.Point(149, 263);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 17);
             this.label2.TabIndex = 4;
@@ -72,7 +71,7 @@ namespace SignalInterrupt
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(16, 103);
+            this.label1.Location = new System.Drawing.Point(16, 263);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 23);
             this.label1.TabIndex = 0;
@@ -80,7 +79,7 @@ namespace SignalInterrupt
             // 
             // buttonTask1Stop
             // 
-            this.buttonTask1Stop.Location = new System.Drawing.Point(166, 40);
+            this.buttonTask1Stop.Location = new System.Drawing.Point(152, 200);
             this.buttonTask1Stop.Name = "buttonTask1Stop";
             this.buttonTask1Stop.Size = new System.Drawing.Size(101, 49);
             this.buttonTask1Stop.TabIndex = 3;
@@ -90,7 +89,7 @@ namespace SignalInterrupt
             // 
             // buttonTask1Start
             // 
-            this.buttonTask1Start.Location = new System.Drawing.Point(19, 40);
+            this.buttonTask1Start.Location = new System.Drawing.Point(19, 200);
             this.buttonTask1Start.Name = "buttonTask1Start";
             this.buttonTask1Start.Size = new System.Drawing.Size(101, 49);
             this.buttonTask1Start.TabIndex = 2;
@@ -100,29 +99,40 @@ namespace SignalInterrupt
             // 
             // progressBarTask1
             // 
-            this.progressBarTask1.Location = new System.Drawing.Point(19, 172);
+            this.progressBarTask1.Location = new System.Drawing.Point(19, 40);
             this.progressBarTask1.Name = "progressBarTask1";
-            this.progressBarTask1.Size = new System.Drawing.Size(248, 137);
+            this.progressBarTask1.Size = new System.Drawing.Size(234, 86);
             this.progressBarTask1.Step = 2;
             this.progressBarTask1.TabIndex = 1;
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.task2Progress);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.buttonTask2Stop);
             this.groupBox2.Controls.Add(this.buttonTask2Start);
-            this.groupBox2.Controls.Add(this.trackBarTask2);
-            this.groupBox2.Location = new System.Drawing.Point(346, 29);
+            this.groupBox2.Location = new System.Drawing.Point(332, 29);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(268, 329);
+            this.groupBox2.Size = new System.Drawing.Size(282, 329);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Task2";
             // 
+            // task2Progress
+            // 
+            this.task2Progress.AutoSize = true;
+            this.task2Progress.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.task2Progress.ForeColor = System.Drawing.Color.Lime;
+            this.task2Progress.Location = new System.Drawing.Point(105, 64);
+            this.task2Progress.Name = "task2Progress";
+            this.task2Progress.Size = new System.Drawing.Size(0, 44);
+            this.task2Progress.TabIndex = 7;
+            this.task2Progress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(134, 216);
+            this.label4.Location = new System.Drawing.Point(154, 263);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 17);
             this.label4.TabIndex = 6;
@@ -130,7 +140,7 @@ namespace SignalInterrupt
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(134, 103);
+            this.label3.Location = new System.Drawing.Point(24, 263);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 23);
             this.label3.TabIndex = 5;
@@ -138,7 +148,7 @@ namespace SignalInterrupt
             // 
             // buttonTask2Stop
             // 
-            this.buttonTask2Stop.Location = new System.Drawing.Point(137, 150);
+            this.buttonTask2Stop.Location = new System.Drawing.Point(157, 200);
             this.buttonTask2Stop.Name = "buttonTask2Stop";
             this.buttonTask2Stop.Size = new System.Drawing.Size(101, 49);
             this.buttonTask2Stop.TabIndex = 5;
@@ -148,7 +158,7 @@ namespace SignalInterrupt
             // 
             // buttonTask2Start
             // 
-            this.buttonTask2Start.Location = new System.Drawing.Point(137, 40);
+            this.buttonTask2Start.Location = new System.Drawing.Point(27, 200);
             this.buttonTask2Start.Name = "buttonTask2Start";
             this.buttonTask2Start.Size = new System.Drawing.Size(101, 49);
             this.buttonTask2Start.TabIndex = 4;
@@ -156,14 +166,21 @@ namespace SignalInterrupt
             this.buttonTask2Start.UseVisualStyleBackColor = true;
             this.buttonTask2Start.Click += new System.EventHandler(this.buttonTask2Start_Click);
             // 
-            // trackBarTask2
+            // backgroundWorker1
             // 
-            this.trackBarTask2.Location = new System.Drawing.Point(41, 40);
-            this.trackBarTask2.Maximum = 100;
-            this.trackBarTask2.Name = "trackBarTask2";
-            this.trackBarTask2.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBarTask2.Size = new System.Drawing.Size(56, 269);
-            this.trackBarTask2.TabIndex = 2;
+            this.backgroundWorker1.WorkerReportsProgress = true;
+            this.backgroundWorker1.WorkerSupportsCancellation = true;
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
+            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
+            // 
+            // backgroundWorker2
+            // 
+            this.backgroundWorker2.WorkerReportsProgress = true;
+            this.backgroundWorker2.WorkerSupportsCancellation = true;
+            this.backgroundWorker2.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker2_DoWork);
+            this.backgroundWorker2.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker2_ProgressChanged);
+            this.backgroundWorker2.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker2_RunWorkerCompleted);
             // 
             // Form1
             // 
@@ -177,7 +194,6 @@ namespace SignalInterrupt
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarTask2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -195,9 +211,9 @@ namespace SignalInterrupt
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonTask2Stop;
         private System.Windows.Forms.Button buttonTask2Start;
-        private System.Windows.Forms.TrackBar trackBarTask2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private System.Windows.Forms.Label task2Progress;
     }
 }
 
